@@ -1,13 +1,56 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700');
+
+:root {
+  /* Colors */
+  --light-black: #2e2c2caf;
+  --headergradient: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  --light-gray: rgba(71, 71, 71, 0.5);
+
+  /* Fonts */
+  --roboto-font: 'Roboto Condensed', Sans-Serif;
+  --roboto-size: 35px;
+  --cabin-font: 'Cabin', serif;
+  --cabin-size: 16px;
+
+  /* Assignments section variables */
+  --assignmentsbg: #b721ff;
+  --assignmentstext: whitesmoke;
+
+  /* Team section variables */
+  --teambg: #7161ef;
+  --teamtext: whitesmoke;
+
+  /* Embedded video section variables */
+  --videobg: #fdc830;
+  --videotext: whitesmoke;
+
+  --video-bg-gradient-webkit: -webkit-linear-gradient(
+    to bottom,
+    #fdc830,
+    #f37335
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  --video-bg-gradient: linear-gradient(
+    to bottom,
+    #fdc830,
+    #f37335
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* Contact Section variables */
+  --contactbg: #2193b0;
+  --contact-bg-gradient-webkit: -webkit-linear-gradient(
+    to top,
+    #2193b0,
+    #6dd5ed
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  --contact-bg-gradient: linear-gradient(
+    to top,
+    #2193b0,
+    #6dd5ed
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 * {
   box-sizing: border-box;
-}
-
-header {
-  overflow-x: hidden;
-  min-height: 100%;
-  padding-top: 70px;
 }
 
 section {
@@ -22,57 +65,34 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: var(--roboto-font);
+  font-size: var(--roboto-size);
+}
+
+p {
+  font-family: var(--cabin-font);
+  font-size: var(--cabin-size);
+}
 .wrapper {
   min-height: 100%;
   padding-top: 70px;
 }
 
-:root {
-  /* Colors */
-  --light-black: #2e2c2caf;
-  --headergradient: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
-  --light-gray: rgba(255, 255, 255, 0.1);
-
-  /* Fonts */
-  --oswald-font: font-family: 'Oswald', sans-serif;
-  --garamond-font: font-family: 'EB Garamond', serif; 
-
-  /* Assignments section variables */
-  --assignmentsbg: #b721ff;
-  --assignmentstext: whitesmoke;
-
-  /* Team section variables */
-  --teambg: #7161EF;  
-  --teamtext: whitesmoke;
-
-  /* Embedded video section variables */
-  --videobg: #fdc830;
-  --videotext: whitesmoke;
-
-  --video-bg-gradient-webkit: -webkit-linear-gradient(to bottom, #fdc830, #f37335); /* Chrome 10-25, Safari 5.1-6 */
-  --video-bg-gradient: linear-gradient(to bottom, #fdc830, #f37335); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-  /* Contact Section variables */
-  --contactbg: #2193b0;
-  --contact-bg-gradient-webkit: -webkit-linear-gradient(to top, #2193b0, #6dd5ed); /* Chrome 10-25, Safari 5.1-6 */
-  --contact-bg-gradient: linear-gradient(to top, #2193b0, #6dd5ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-/* Nav area */ 
+/* Nav area */
 
 .navigation a {
-  font-family: var(--oswald-font);
-  font-size: 1em;
+  font-family: var(--roboto-font);
+  font-size: 1.2em;
   color: whitesmoke;
 }
 
 .navigation .nav-item:last-child {
-  padding-right: 1em;
+  padding-right: 0.5em;
 }
 
 .navigation .nav-item {
-  padding: 0.5em;
+  padding: 0.75em;
 }
 
 .navigation .navbar-brand {
@@ -80,49 +100,57 @@ body {
 }
 
 .navigation .nav-link:hover {
-  color: black;
+  color: var(--light-black);
 }
 
-/* Header area */
+/* Hero section */
 
-header {
-  background: #8E2DE2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.hero {
+  overflow-x: hidden;
+  min-height: 100%;
+  padding-top: 70px;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-header .row .col-md-5 {
-  padding: 5vmin 2vmin;
+.hero .row .col-md-5 {
+  padding: 20px 15px;
 }
 
-header .row .col-md-7 {
-  padding: 20vmin 1vmin;
-  padding-bottom: 35vmin;
+.hero .row .col-md-7 {
+  padding: 150px 0px;
   color: white;
 }
 
-header .row .col-md-5 img {
+.hero .row .col-md-5 img {
   width: 130%;
 }
 
-header .container .col-md-7 h6 {
-  padding: 1vmin;
-  letter-spacing: 4px;
+.hero .container .col-md-7 h6 {
+  padding: 0.5rem;
+  letter-spacing: 5px;
 }
 
-header .container .col-md-7 h1 {
-  font-size: 8vmin;
+.hero .container .col-md-7 h1 {
+  font-size: 4rem;
   font-weight: bold;
-  padding: 0.1em 0em;
 }
 
-header .container .col-md-7 p {
-  padding: 1vmin 5vmin;
+.hero .container .col-md-7 p {
+  padding: 1rem 4rem;
 }
 
-header .container .col-md-7 button {
-  border-radius: 20px;
+.hero .container .col-md-7 button {
+  border-radius: 20rem;
   font-weight: bold;
 }
 
@@ -133,6 +161,7 @@ header .container .col-md-7 button {
 
 #opgaver .container h1 {
   color: var(--assignmentstext);
+  padding: 0.5rem;
 }
 
 #opgaver iframe {
@@ -146,35 +175,40 @@ header .container .col-md-7 button {
   background: var(--teambg);
 }
 
-.section-4 .container h1 {
-  font-size: 5vmin;
+.team-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.section-4 .team {
-  padding: 0 5vmin;
+.team-section .container h1 {
+  padding: 0.5rem;
 }
 
-.section-4 .card {
+.team-section .row {
+  padding: 1rem 1rem;
+}
+
+.team-section .card {
   width: 18rem;
-  margin-top: 0vmin;
-  padding: 5px; 
+  margin-top: 1rem;
+  padding: 0.4rem;
 }
 
-.section-4 .card .card-text {
-  padding: 1em;
+.team-section .card .card-text {
+  padding: 0.5rem;
 }
 
-.section-4 .card .card-body a {
-  font-size: 1.5em;
+.team-section .card .card-body a {
+  font-size: 1.5rem;
 }
 
-.section-4 .card .team-circle-image {
-  margin-top: 5vmin;
-  width: 10vw;
-  height: 10vw;
+.team-section .card .team-circle-image {
+  margin-top: 2.5rem;
+  width: 10rem;
+  height: 10rem;
 }
 
-.section-4 .card .team-circle-image img {
+.team-section .card .team-circle-image img {
   object-fit: cover;
 }
 
@@ -188,7 +222,7 @@ header .container .col-md-7 button {
 }
 
 .videoSection .row {
-  margin-top: 2vmin; 
+  margin-top: 2vmin;
 }
 
 .videoSection .row .col-md-7 {
@@ -216,9 +250,10 @@ header .container .col-md-7 button {
   position: relative;
   padding-top: 25px;
   padding-bottom: 67.5%;
-  height: 0;}
+  height: 0;
+}
 
-#video-laptop iframe {  
+#video-laptop iframe {
   box-sizing: border-box;
   background: url(http://i.stack.imgur.com/zZNgk.png) center center no-repeat;
   background-size: contain;
