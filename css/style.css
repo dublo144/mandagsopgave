@@ -191,7 +191,6 @@ p {
 .team-section .card {
   width: 18rem;
   margin-top: 1rem;
-  padding: 0.4rem;
 }
 
 .team-section .card .card-text {
@@ -199,7 +198,7 @@ p {
 }
 
 .team-section .card .card-body a {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .team-section .card .team-circle-image {
