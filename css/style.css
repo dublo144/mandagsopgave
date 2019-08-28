@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Oswald&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  overflow-x: hidden;
+  min-height: 100%;
+  padding-top: 70px;
+}
+
+section {
+  overflow-x: hidden;
+  padding: 70px 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  padding-top: 70px;
+}
+
+:root {
+  /* Colors */
+  --light-black: #2e2c2caf;
+  --headergradient: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  --light-gray: rgba(255, 255, 255, 0.1);
+
+  /* Fonts */
+  --oswald-font: font-family: 'Oswald', sans-serif;
+  --garamond-font: font-family: 'EB Garamond', serif; 
+
+  /* Assignments section variables */
+  --assignmentsbg: #b721ff;
+  --assignmentstext: whitesmoke;
+
+  /* Team section variables */
+  --teambg: #7161EF;  
+  --teamtext: whitesmoke;
+
+  /* Embedded video section variables */
+  --videobg: #fdc830;
+  --videotext: whitesmoke;
+
+  --video-bg-gradient-webkit: -webkit-linear-gradient(to bottom, #fdc830, #f37335); /* Chrome 10-25, Safari 5.1-6 */
+  --video-bg-gradient: linear-gradient(to bottom, #fdc830, #f37335); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  /* Contact Section variables */
+  --contactbg: #fdc830;
+  --contact-bg-gradient-webkit: -webkit-linear-gradient(to top, #fdc830, #f37335); /* Chrome 10-25, Safari 5.1-6 */
+  --contact-bg-gradient: linear-gradient(to top, #fdc830, #f37335); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Nav area */ 
+
+.navigation a {
+  font-family: var(--oswald-font);
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+.navigation .nav-item:last-child {
+  padding-right: 1em;
+}
+
+.navigation .nav-item {
+  padding: 0.5em;
+}
+
+.navigation .navbar-brand {
+  padding-left: 1rem;
+}
+
+.navigation .nav-link:hover {
+  color: black;
+}
+
+/* Header area */
+
+header {
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+header .row .col-md-5 {
+  padding: 5vmin 2vmin;
+}
+
+header .row .col-md-7 {
+  padding: 20vmin 1vmin;
+  padding-bottom: 35vmin;
+  color: white;
+}
+
+header .row .col-md-5 img {
+  width: 130%;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+header .container .col-md-7 button {
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Assignments area */
+#opgaver {
+  background: var(--assignmentsbg);
+}
+
+#opgaver .container h1 {
+  color: var(--assignmentstext);
+}
+
+/* Team area */
+
+#gruppe {
+  background: var(--teambg);
+}
+
+.section-4 .container h1 {
+  font-size: 5vmin;
+}
+
+.section-4 .team {
+  padding: 10vmin 5vmin;
+}
+
+.section-4 .card {
+  width: 18rem;
+  margin-top: 0vmin;
+}
+
+.section-4 .card .card-text {
+  padding: 1em;
+}
+
+.section-4 .card .card-body a {
+  font-size: 1.5em;
+}
+
+.section-4 .card .team-circle-image {
+  margin-top: 5vmin;
+  width: 10vw;
+  height: 10vw;
+}
+
+.section-4 .card .team-circle-image img {
+  object-fit: cover;
+}
+
+/* Embedded video */
+
+.video {
+  background: var(--videobg);
+  background: var(--video-bg-gradient-webkit);
+  background: var(--video-bg-gradient);
+}
+
+.videoContainer {
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  /* optional */
+  width: 100%;
+  height: 100%; 
+}
+
+/* .contact area */
+
+.contact {
+  background: var(--contactbg);
+  background: var(--contact-bg-gradient-webkit);
+  background: var(--contact-bg-gradient);
+}
