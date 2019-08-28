@@ -53,10 +53,9 @@ body {
 
 
   /* Contact Section variables */
-  --contactbg: #fdc830;
-  --contact-bg-gradient-webkit: -webkit-linear-gradient(to top, #fdc830, #f37335); /* Chrome 10-25, Safari 5.1-6 */
-  --contact-bg-gradient: linear-gradient(to top, #fdc830, #f37335); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  --contactbg: #2193b0;
+  --contact-bg-gradient-webkit: -webkit-linear-gradient(to top, #2193b0, #6dd5ed); /* Chrome 10-25, Safari 5.1-6 */
+  --contact-bg-gradient: linear-gradient(to top, #2193b0, #6dd5ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Nav area */ 
@@ -180,13 +179,8 @@ header .container .col-md-7 button {
   background: var(--video-bg-gradient);
 }
 
-.videoSection .row .col-md-5 {
-  padding: 5vmin 2vmin;
-}
-
-.videoSection .row .col-md-7 {
-  padding: 20vmin 1vmin;
-  padding-bottom: 35vmin;
+.videoSection .row .col-md-12 {
+  padding: 1vmin 1vmin;
   color: white;
 }
 
