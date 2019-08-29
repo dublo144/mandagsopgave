@@ -114,7 +114,7 @@
   <!--Team section-->
   <section id="gruppe" class="team-section wrapper">
     <div class="container text-center section-header">
-      <h1 class="text-light">Team</h1>
+      <h1 class="text-light">Team Guld </h1>
     </div>
 
     <div class="team row">
@@ -222,48 +222,105 @@
 
   </section>
 
+  <!--Contact Section-->
   <section id="contact" class="contact wrapper">
-    <div class="container text-center">
-      <h1 class="text-light">Kontakt</h1>
-      <p class="text-light">Kontaktinfo</p>
-    </div>
 
-    <div class="row justify-content-around">
-      <!--left section-->
-      <div class="col-md-6 col-sm-12">
-        <div class="card d-inline-flex shadow-lg">
+    <!-- Section header-->
+    <h1 class="text-light text-center">Kontakt</h1>
+
+    <!-- Row -->
+    <div class="row">
+
+      <!-- Column-->
+      <div class="col-md-4 mb-md-0 mb-4">
+        <div class="card text-center shadow-lg">
           <div class="card-body">
-            <h5 class="card-title">Sig hej!</h5>
+
+            <!-- Header -->
+            <div class="form-header">
+              <h3>Sig Hej!</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+
+            <!--Card body-->
             <form>
               <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                  placeholder="Navn" />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </div>
+                  <input type="text" placeholder="Navn " class="form-control" required>
+                </div>
               </div>
+
               <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                  placeholder="Email" />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                  </div>
+                  <input name="email" type="email" placeholder="Email" class="form-control" required>
+                </div>
               </div>
+
               <div class="form-group">
-                <textarea class="form-control" id="textArea" rows="3" placeholder="Besked"></textarea>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-pen"></i>
+                    </span>
+                  </div>
+                  <textarea name="message" rows="5" placeholder="Besked" class="form-control" required></textarea>
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+
+              <button type="submit" class="btn btn-primary float-center">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                Send Besked
+              </button>
+          </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Column-->
+      <div class="col-md-8 mb-md-0 mb-4">
+        <div class="card">
+          <div id="map" class="shadow-lg"></div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+              <i class="fas fa-map-pin fa-2x" aria-hidden="true"></i>
+              <h6>Nørgaardsvej 30</h6>
+              <p>2800, Kongens Lyngby</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
+              <h6>36 15 45 04</h6>
+              <p>Man - Fre, 8:00 - 16:00</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
+              <h6>cph-mb346@cphbusiness.dk</h6>
+              <p>github.com/dublo144</p>
+            </div>
           </div>
         </div>
       </div>
-      <!--right section-->
-      <div class="col-md-6 col-sm-12">
-        <h1>Kontakt info</h1>
-      </div>
+
     </div>
+
   </section>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">
-        Copyright &copy; Your Website 2019
-      </p>
+        Copyright
     </div>
     <!-- /.container -->
   </footer>
@@ -278,8 +335,15 @@
   <!-- Js for scroll -->
   <script src="js/scrolling-nav.js"></script>
 
+  <!-- Google Maps-->
+  <script asyc defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWrpPMZCKC7HXrK2BlY_eknKVi0j52vfU&callback=initMap"></script>
+
   <!-- Custom js -->
   <script src="js/script.js"></script>
+
+  <!-- Font Awesome-->
+  <script src="https://kit.fontawesome.com/cc777b435b.js"></script>
 </body>
 
 </html>

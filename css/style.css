@@ -277,3 +277,45 @@ p {
   background: var(--contact-bg-gradient-webkit);
   background: var(--contact-bg-gradient);
 }
+.contact h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contact .row {
+  margin-top: 2.5rem;
+}
+
+.contact .col-md-4 .card {
+  height: 30rem;
+}
+
+.contact .col-md-4 .card h3 {
+  font-family: var(--roboto-font);
+}
+
+.contact .col-md-4 button {
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.contact .col-md-8 .container h6 {
+  font-size: 1.2rem;
+  font-family: var(--roboto-font);
+  font-weight: bold;
+}
+
+.contact .col-md-8 .container .row {
+  margin-top: 0.75rem;
+  color: white;
+}
+
+.contact .col-md-8 .container i {
+  margin: 1.5rem;
+}
+
+#map {
+  background: #2193b0;
+  height: 20rem;
+  width: 100%;
+}
