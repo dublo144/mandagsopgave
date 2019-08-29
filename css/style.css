@@ -36,16 +36,16 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   /* Contact Section variables */
-  --contactbg: #2193b0;
+  --contactbg: #4e54c8;
   --contact-bg-gradient-webkit: -webkit-linear-gradient(
-    to top,
-    #2193b0,
-    #6dd5ed
+    to bottom,
+    #8f94fb,
+    #4e54c8
   ); /* Chrome 10-25, Safari 5.1-6 */
   --contact-bg-gradient: linear-gradient(
-    to top,
-    #2193b0,
-    #6dd5ed
+    to bottom,
+    #8f94fb,
+    #4e54c8
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
