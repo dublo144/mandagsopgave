@@ -66,11 +66,11 @@
   </div>
 
   <!-- ----------------------------------------------------------------------- -->
-  <!--                              hero section                               -->
+  <!--                              Hero section                               -->
   <!-- ----------------------------------------------------------------------- -->
 
-  <section id='hero' class="hero">
-    <div class="container text-center">
+  <section class="hero">
+    <div class="container text-center" id="hero-content">
       <div class="row">
         <div class="col-md-7 col-sm-12">
           <h6>Mads Brandt</h6>
@@ -92,7 +92,7 @@
         <svg class="mouse" xmlns="..." viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
           <g fill="none" fill-rule="evenodd">
             <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36" />
-            <circle cx="36.5" cy="31.5" r="4.5" fill="#FFF" />
+            <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF" />
           </g>
         </svg>
       </a>
@@ -106,43 +106,42 @@
   <section id="opgaver" class="assignments-section wrapper">
     <div class="container text-center">
       <h1 class="text-light">Opgaver</h1>
-    </div>
 
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="card text-center shadow-lg">
-          <div class="card-header">
-            <h4>Opgave 3</h4>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="card text-center shadow-lg">
+            <div class="card-header">
+              <h4>Opgave 3</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <iframe src="//jsfiddle.net/dublo/5pLfv0qg/1/embedded/html,css,result/"
+                  allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="opgave3.html" class="text-secondary text-decoration-none" target="_blank">Se løsning</a>
+            </div>
           </div>
-          <div class="card-body">
-            <p class="card-text">
-              <iframe src="//jsfiddle.net/dublo/5pLfv0qg/1/embedded/html,css,result/" allowfullscreen="allowfullscreen"
-                allowpaymentrequest frameborder="0"></iframe>
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="opgave3.html" class="text-secondary text-decoration-none" target="_blank">Se løsning</a>
+        </div>
+
+        <div class=" col-md-6 col-sm-12">
+          <div class="card text-center shadow-lg">
+            <div class="card-header">
+              <h4>Opgave 5</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <iframe src="//jsfiddle.net/dublo/tfsvqwn0/9/embedded/html,css,result/"
+                  allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="firstletter.html" class="text-secondary text-decoration-none" target="_blank">Se løsning</a>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class=" col-md-6 col-sm-12">
-        <div class="card text-center shadow-lg">
-          <div class="card-header">
-            <h4>Opgave 5</h4>
-          </div>
-          <div class="card-body">
-            <p class="card-text">
-              <iframe src="//jsfiddle.net/dublo/tfsvqwn0/9/embedded/html,css,result/" allowfullscreen="allowfullscreen"
-                allowpaymentrequest frameborder="0"></iframe>
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="firstletter.html" class="text-secondary text-decoration-none" target="_blank">Se løsning</a>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
   </section>
 
@@ -151,8 +150,9 @@
   <!-- ----------------------------------------------------------------------- -->
 
   <section id="gruppe" class="team-section wrapper">
-    <div class="container text-center section-header">
+    <div class="container text-center">
       <h1 class="text-light">Team Guld </h1>
+
     </div>
 
     <div class="team row">
@@ -231,7 +231,6 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- ----------------------------------------------------------------------- -->
@@ -280,8 +279,7 @@
               <h3>Coming soon!</h3>
               <hr>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem nesciunt delectus non omnis cumque
-                quia voluptatibus eos fugiat odio.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, nihil.
               </p>
               <form>
                 <div class="form-group">
