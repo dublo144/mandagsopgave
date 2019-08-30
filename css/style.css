@@ -14,15 +14,15 @@
 
   /* Assignments section variables */
   --assignmentsbg: #b721ff;
-  --assignmentstext: whitesmoke;
+  --assignmentstext: white;
 
   /* Team section variables */
   --teambg: #7161ef;
-  --teamtext: whitesmoke;
+  --teamtext: white;
 
   /* Embedded video section variables */
   --videobg: #fdc830;
-  --videotext: whitesmoke;
+  --videotext: white;
 
   --video-bg-gradient-webkit: -webkit-linear-gradient(
     to bottom,
@@ -275,6 +275,11 @@ section .scroll-container a span::before {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#page-top {
+  opacity: 0;
+  transition: 2s opacity;
+}
+
 .hero .row .col-md-5 {
   padding: 20px 15px;
 }
@@ -467,7 +472,6 @@ section .scroll-container a span::before {
 }
 
 #map {
-  background: #2193b0;
   height: 20rem;
   width: 100%;
 }
