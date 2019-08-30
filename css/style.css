@@ -480,7 +480,12 @@ p {
   font-family: var(--roboto-font);
 }
 
-.contact .col-md-4 button {
+.contact .col-md-4 .card button {
+  background-color: #4a00e0;
+  color: white;
+  border: none;
+  border-radius: 20rem;
+  font-weight: bold;
   margin-top: 2rem;
   padding: 0.5rem;
 }

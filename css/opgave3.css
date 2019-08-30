@@ -1,0 +1,42 @@
+body {
+  background-color: #e7b91b;
+}
+
+h1 {
+  color: #111;
+  font-family: 'Helvetica Neue';
+  font-size: 275px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+h2 {
+  color: #111;
+  font-family: 'Open Sans';
+  font-size: 30px;
+  text-align: center;
+  line-height: 32px;
+  margin: 0 0 72px;
+}
+
+p {
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  color: #685206;
+  margin: 0 0 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.left {
+  float: left;
+  margin-left: 15px;
+  width: 260px;
+}
+
+.right {
+  float: right;
+  margin-right: 15px;
+  width: 260px;
+}

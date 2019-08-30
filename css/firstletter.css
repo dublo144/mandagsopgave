@@ -1,0 +1,13 @@
+p {
+  color: #111;
+}
+
+p::first-letter {
+  color: blue;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+p::first-line {
+  color: red;
+}
