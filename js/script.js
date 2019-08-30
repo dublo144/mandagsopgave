@@ -9,17 +9,13 @@ $(window).on('load', function () {
       .to(".loader3-right",.5,{x:"100%",ease: Expo.easeOut},"-=.5")
       .to(".loader4-left",.5,{x:"-100%",ease: Expo.easeOut})
       .to(".loader4-right",.5,{x:"100%",ease: Expo.easeOut})
-      this.window.setTimeout(fadeIn, 2000);
-      
+      this.window.setTimeout(fadeIn, 3000); 
 });
-
 
 function fadeIn() {
   document.getElementById('page-top').style.opacity='1';
-  document.getElementById('hero').style.opacity='1';
   
 }
-
 
 // GOOGLE MAPS
 // Initialize and add the map

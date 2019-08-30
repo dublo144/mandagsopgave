@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700|Lobster|Pacifico|Josefin+Sans');
 
 :root {
   /* Colors */
@@ -8,9 +8,12 @@
 
   /* Fonts */
   --roboto-font: 'Roboto Condensed', Sans-Serif;
-  --roboto-size: 35px;
+  --roboto-size: 2rem;
   --cabin-font: 'Cabin', serif;
-  --cabin-size: 16px;
+  --cabin-size: 1rem;
+  --lobster-font: 'Lobster', cursive;
+  --pacifico-font: 'Pacifico', cursive;
+  --josefin-font: 'Josefin Sans', sans-serif;
 
   /* Assignments section variables */
   --assignmentsbg: #b721ff;
@@ -23,17 +26,25 @@
   /* Embedded video section variables */
   --videobg: #fdc830;
   --videotext: white;
-
   --video-bg-gradient-webkit: -webkit-linear-gradient(
     to bottom,
     #fdc830,
     #f37335
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  --video-bg-gradient: linear-gradient(
-    to bottom,
-    #fdc830,
-    #f37335
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
+  --video-bg-gradient: linear-gradient(to bottom, #fdc830, #f37335);
+
+  /* Cupcake Section Variables */
+
+  --cupcakebg: #eacda3;
+  --cupcakebg-gradient-webkit: -webkit-linear-gradient(
+    to right,
+    #eacda3,
+    #d6ae7b
+  );
+  --cupcakebg-gradient: linear-gradient(to right, #eacda3, #d6ae7b);
+
+  --cupcake-pink: #f286a9;
+  --cupcake-brown: #724b44;
 
   /* Contact Section variables */
   --contactbg: #4e54c8;
@@ -156,82 +167,6 @@ p {
   z-index: 2;
 }
 
-/* Scroll icon */
-
-section .scroll-container a {
-  padding-top: 2.5rem;
-  bottom: 20px;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: #fff;
-  letter-spacing: 0.1em;
-  text-decoration: none !important;
-  transition: opacity 0.3s;
-}
-section .scroll-container a:hover {
-  opacity: 0.5;
-}
-section .scroll-container a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-section .scroll-container a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: sdb 2s infinite;
-  animation: sdb 2s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 /* Nav area */
 
 .navigation a {
@@ -254,6 +189,42 @@ section .scroll-container a span::before {
 
 .navigation .nav-link:hover {
   color: var(--light-black);
+}
+
+/* Scroll icon */
+.scroll-link {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mouse {
+  max-width: 2.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.scroll {
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+  animation-iteration-count: infinite;
+  transform-origin: 50% 20.5px;
+  will-change: transform;
+}
+
+@keyframes scroll {
+  0%,
+  20% {
+    transform: translateY(0) scaleY(1);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(36px) scaleY(2);
+    opacity: 0.01;
+  }
 }
 
 /* Hero section */
@@ -281,7 +252,7 @@ section .scroll-container a span::before {
 }
 
 .hero .row .col-md-5 {
-  padding: 20px 15px;
+  padding: 1.2rem 1rem;
 }
 
 .hero .row .col-md-7 {
@@ -427,7 +398,65 @@ section .scroll-container a span::before {
   height: 100%;
 }
 
-/* .contact area */
+/*----------------*/
+/*  CUPCAKE AREA  */
+/*----------------*/
+
+.cupcake {
+  background: var(--cupcakebg);
+  background: var(--cupcakebg-gradient-webkit);
+  background: var(--cupcakebg-gradient);
+}
+
+.cupcake .row .col-md-7 {
+  padding: 3rem 5rem;
+}
+
+.cupcake .row .col-md-7 h1 {
+  font-family: var(--lobster-font);
+  color: var(--cupcake-pink);
+  font-size: 10rem;
+  margin: 0;
+}
+
+.cupcake .row .col-md-7 h2 {
+  font-family: var(--lobster-font);
+  color: var(--cupcake-brown);
+  font-size: 5rem;
+  text-align: right;
+  line-height: 5px;
+  padding-right: 5rem;
+  margin-bottom: 5rem;
+}
+
+.cupcake .row .col-md-7 h3 {
+  font-family: var(--lobster-font);
+  color: var(--cupcake-brown);
+  text-align: center;
+}
+
+.cupcake .row .col-md-7 p {
+  color: var(--cupcake-brown);
+  font-family: var(--josefin-font);
+}
+
+.cupcake .row .col-md-5 {
+  padding: 1.2rem 1rem;
+}
+
+.cupcake .row .col-md-5 img {
+  width: 130%;
+  margin: 0;
+}
+
+.cupcake .row .col-md-7 .card button {
+  color: white;
+  background-color: var(--cupcake-brown);
+  border-radius: 20rem;
+  font-weight: bold;
+}
+
+/* Contact area */
 
 .contact {
   background: var(--contactbg);
