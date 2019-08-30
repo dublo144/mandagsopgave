@@ -65,6 +65,10 @@ body {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-family: var(--roboto-font);
   font-size: var(--roboto-size);
@@ -78,6 +82,78 @@ p {
 .wrapper {
   min-height: 100%;
   padding-top: 70px;
+}
+/* Pre loader */
+.loaderFull {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.loader1-left {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: #fff;
+  z-index: 2;
+}
+.loader2-left {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: #fdcb6e;
+  z-index: 2;
+}
+.loader3-left {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: #222831;
+  z-index: 2;
+}
+.loader4-left {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: #6c5ce7;
+  z-index: 2;
+}
+.loader1-right {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #fff;
+  z-index: 2;
+}
+.loader2-right {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #fdcb6e;
+  z-index: 2;
+}
+.loader3-right {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #222831;
+  z-index: 2;
+}
+.loader4-right {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #6c5ce7;
+  z-index: 2;
 }
 
 /* Nav area */
