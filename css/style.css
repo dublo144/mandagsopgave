@@ -182,15 +182,19 @@ p {
 .navigation a {
   font-family: var(--roboto-font);
   font-size: 1.2em;
-  color: whitesmoke;
+  color: white;
 }
 
 .navigation .nav-item:last-child {
-  padding-right: 0.5em;
+  padding-right: 2vmin;
 }
 
 .navigation .nav-item {
   padding: 0.75em;
+}
+
+.navbar-nav .nav-link a {
+  color: white;
 }
 
 .navigation .navbar-brand {
@@ -211,7 +215,8 @@ p {
   transform: translateX(-50%);
 }
 .mouse {
-  max-width: 2.5rem;
+  padding-top: 5vmin;
+  max-width: 5vmin;
   width: 100%;
   height: auto;
 }
@@ -265,49 +270,52 @@ p {
 }
 
 .hero .row .col-md-5 {
-  padding: 1.2rem 1rem;
+  padding: 2vmin 3vmin;
 }
 
 .hero .row .col-md-7 {
-  padding: 150px 0px;
+  padding: 15vmin 0px;
   color: white;
 }
 
 .hero .row .col-md-5 img {
-  width: 130%;
+  width: 80vmin;
+  padding-right: 10vmin;
 }
 
-.hero .container .col-md-7 h6 {
-  padding: 0.5rem;
+.hero .container-fluid .col-md-7 h6 {
   letter-spacing: 5px;
 }
 
-.hero .container .col-md-7 h1 {
-  font-size: 4rem;
+.hero .container-fluid .col-md-7 h1 {
+  font-size: 10vmin;
   font-weight: bold;
 }
 
-.hero .container .col-md-7 p {
-  padding: 1rem 4rem;
+.hero .container-fluid .col-md-7 p {
+  padding: 5vmin 4vmin;
 }
 
-.hero .container .col-md-7 button {
+.hero .container-fluid .col-md-7 button {
   border-radius: 20rem;
   font-weight: bold;
 }
 
-/* Assignments area */
+/* -------------------------------------------------------------------------- */
+/*                             Assignments Section                            */
+/* -------------------------------------------------------------------------- */
+
 .assignments-section {
   background: var(--assignmentsbg);
 }
 
 .assignments-section h1 {
-  font-size: 3rem;
+  font-size: 7vmin;
   font-weight: bold;
 }
 
 .assignments-section .row {
-  padding: 2rem 3rem;
+  padding: 2vmin 3vmin;
 }
 
 .assignments-section .card {
@@ -316,7 +324,7 @@ p {
 
 .assignments-section iframe {
   width: 100%;
-  height: 20rem;
+  height: 37vmin;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -328,17 +336,16 @@ p {
 }
 
 .team-section h1 {
-  font-size: 3rem;
+  font-size: 7vmin;
   font-weight: bold;
-  padding: 0.5rem;
 }
 
-.team-section .row {
-  padding: 1rem 1rem;
+.team-section .container-fluid .row {
+  padding: 2vmin 1vmin;
 }
 
 .team-section .card {
-  width: 18rem;
+  width: 38vmin;
   margin-top: 1rem;
 }
 
@@ -347,7 +354,7 @@ p {
 }
 
 .team-section .card .card-body a {
-  font-size: 1rem;
+  font-size: 4vmin;
 }
 
 .team-section .card .team-circle-image {
@@ -388,7 +395,6 @@ p {
 .videoSection .row h1 {
   font-size: 7vmin;
   font-weight: bold;
-  padding: 0.1em 0em;
 }
 
 .videoSection .container-fluid .col-md-5 button {
@@ -398,7 +404,7 @@ p {
 
 #video-laptop {
   position: relative;
-  padding-top: 25px;
+  padding-top: 3vmin;
   padding-bottom: 67.5%;
   height: 0;
 }
@@ -426,44 +432,43 @@ p {
 }
 
 .cupcake .row .col-md-7 {
-  padding: 3rem 5rem;
+  padding: 5vmin 10vmin;
 }
 
-.cupcake .row .col-md-7 h1 {
+.cupcake .row h1 {
   font-family: var(--lobster-font);
   color: var(--cupcake-pink);
-  font-size: 10rem;
+  font-size: 20vmin;
   margin: 0;
 }
 
-.cupcake .row .col-md-7 h2 {
+.cupcake .row h2 {
   font-family: var(--lobster-font);
   color: var(--cupcake-brown);
-  font-size: 5rem;
+  font-size: 10vmin;
   text-align: right;
-  line-height: 5px;
-  padding-right: 5rem;
-  margin-bottom: 5rem;
+  line-height: 1vmin;
+  padding-right: 15vmin;
+  margin-bottom: 10vmin;
 }
 
-.cupcake .row .col-md-7 h3 {
+.cupcake .row h3 {
   font-family: var(--lobster-font);
   color: var(--cupcake-brown);
   text-align: center;
 }
 
-.cupcake .row .col-md-7 p {
+.cupcake .row p {
   color: var(--cupcake-brown);
   font-family: var(--josefin-font);
 }
 
 .cupcake .row .col-md-5 {
-  padding: 1.2rem 1rem;
+  padding: 1.2vmin 1vmin;
 }
 
 .cupcake .row .col-md-5 img {
-  width: 130%;
-  margin: 0;
+  width: 80vmin;
 }
 
 .cupcake .row .col-md-7 .card button {
