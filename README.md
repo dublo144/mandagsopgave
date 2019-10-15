@@ -1,6 +1,7 @@
 <h1 align="center">Welcome to Mandagsopgave 👋</h1>
 
-> Assignment in HTML and CSS. Added JS for fun
+> Opgave i HTML og CSS. JS tilføjet.
+> Løsningen er hosted her: http://68.183.212.196/mandagsopgave/
 
 ## Opgavebeskrivelse
 
@@ -46,15 +47,3 @@ Hvert gruppe medlem skal have en side der indeholder følgende ”elementer”:
 
 - Twitter: [@dublo144](https://twitter.com/dublo144)
 - Github: [@dublo144](https://github.com/dublo144)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/dublo144/mandagsopgave/issues).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
